@@ -1,8 +1,8 @@
 language: csharp
 solution: PlexureAPITest.sln
-before_install:
-  - sudo apt-get install nunit-console
-before_script:
+install:
   - nuget restore PlexureAPITest.sln
-after_script:
-  - nunit-console ./PlexureAPITest/bin/Debug/PlexureAPITest.dll
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Release PlexureAPITest.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./PlexureAPITest/bin/Debug/PlexureAPITest.dll
