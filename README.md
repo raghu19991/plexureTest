@@ -2,7 +2,7 @@
   
 [![Build Status](https://travis-ci.org/raghu19991/plexureTest.svg?branch=main)](https://travis-ci.org/raghu19991/plexureTest)  
   
-![Test Run](https://github.com/raghu19991/plexureTest/Run.JPG?raw=true)   
+![Test Run](https://github.com/raghu19991/plexureTest/blob/main/Run.JPG?raw=true)   
   
   
 ###Steps to Run:  
